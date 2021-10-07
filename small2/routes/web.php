@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 
 
 /*
@@ -18,9 +19,4 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function(){
-    return view('home', [
-        "title"=>"Home Page"
-    ]);
-});
-
+Route::get('/login', [LoginController::class,'index']);
