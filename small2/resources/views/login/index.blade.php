@@ -16,7 +16,11 @@
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password">
             </div>
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary col-lg-12">Login</button>
         </form>
+
+        <div class=" text-center mt-3">
+            <small>are you already create an account? <a href="/register">Now register</a></small>
+        </div>
     </div>
 @endsection
